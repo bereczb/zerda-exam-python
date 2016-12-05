@@ -35,7 +35,6 @@ class SpaceX:
 
     def addRocket(self, new_rocket):
         self.rockets_list.append(new_rocket)
-        print(self.rockets_list)
 
     def refill_all(self):
         for rocket in self.rockets_list:
@@ -49,7 +48,7 @@ class SpaceX:
         self.stored_fuel += amount
 
     def getStats(self):
-        return 'rockets: ' + str(len(self.rockets_list)) + ' fuel: ' + str(self.stored_fuel) #+ ' launches: '
+        return 'rockets: ' + str(len(self.rockets_list)) + ' fuel: ' + str(self.stored_fuel) + ' launches: '
 
 space_x = SpaceX(100)
 falcon1 = Rocket('falcon1', 0, 0)

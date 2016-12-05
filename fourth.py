@@ -46,6 +46,7 @@ class Rocket:
             amount_of_refilled_fuel = 20 - self.fuel_level
             self.fuel_level = 20
             return amount_of_refilled_fuel
+        return 0
 
     def getStats(self):
         return 'name: ' + self.rocket_type + ' fuel: ' + str(self.fuel_level) + ' launches: ' + str(self.number_of_launches)

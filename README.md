@@ -29,6 +29,10 @@ The application is accepted if:
 
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
+You can use standard package: Tkinter - you have to import it. You need to set up a canvas with its parameters like width, height etc.
+After that you can use 'create_rectangle' method of Canvas class -> set up the x0, y0, x1, y1 coordinates and other options:
+canvas1.create_rectangle(10, 10, 100, 100, fill="black")
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
+V is View in MVC: it handles the display of the data come from the model through the controller. This is the user interface.
